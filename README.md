@@ -15,6 +15,15 @@
 
 [![](https://visitcount.itsvg.in/api?id=the-pratik&icon=6&color=6)](https://visitcount.itsvg.in)
 
+## 🎁 Popular Links
+
+🎯https://sfyt.vercel.app/
+
+🎯https://qr-panda.vercel.app/
+
+🎯https://reachy.vercel.app/
+
+
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=the-pratik&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
