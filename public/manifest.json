@@ -1,0 +1,15 @@
+{
+  "short_name": "Pratik Deshpande",
+  "name": "the-pratik. | Portfolio",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "1981x1981"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
