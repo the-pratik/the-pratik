@@ -1,5 +1,5 @@
 import { WavyBackground } from "./components/ui/wavy-background";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SparklesCore } from "./components/ui/sparkles";
 
 import SocialLinks from "./components/pages/SocialLinks";
@@ -12,6 +12,7 @@ import ContactMe from "./components/pages/ContactMe";
 function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [selectedTab, setSelectedTab] = useState(0);
+  const [show, setShow] = useState(true);
 
   const introRef = useRef(null);
   const aboutRef = useRef(null);
@@ -36,9 +37,17 @@ function App() {
     scrollToSection(sectionRef);
   };
 
+  useEffect(() => {
+    let timer = setTimeout(() => setShow(false), 1000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
   return (
     <>
-      <div id="preloader">
+      <div id="preloader" style={{ display: show ? "" : "none" }}>
         <div id="loader"></div>
       </div>
 
