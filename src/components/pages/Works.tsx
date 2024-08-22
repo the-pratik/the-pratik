@@ -58,6 +58,15 @@ const works = [
     description: "A blog application with admin dashboard to post blogs",
   },
   {
+    title: "React Arrow Stepper",
+    projectLink: "https://react-arrow-stepper.vercel.app",
+    githubLink: "https://github.com/the-pratik/react-arrow-stepper",
+    altText: "ArrowStepper",
+    imageUrl: "images/projects/ArrowStepper.png",
+    category: "React Project",
+    description: "A customizable react package for stepper arrow",
+  },
+  {
     title: "Guess My Age",
     projectLink: "https://guess-age.vercel.app",
     githubLink: "https://github.com/the-pratik/guess-my-age",
