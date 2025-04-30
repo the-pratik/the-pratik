@@ -216,11 +216,3 @@ rel="noreferrer"
 ## ✍️ Random Dev Quote
 
 <p style="margin: 0 auto"><img align="center" src="https://quotes-github-readme.vercel.app/api?type=vetical&theme=radical" alt="the-pratik" /></p>
-
-## 📊 GitHub Stats
-
-<p><img align="left" width="300" height="150px" src="https://github-readme-stats.vercel.app/api?username=the-pratik&theme=radical&hide_border=false&include_all_commits=true&count_private=true" alt="the-pratik" /></p>
-
-<p><img align="left" width="300" height="150px" src="https://github-readme-streak-stats.herokuapp.com/?user=the-pratik&theme=radical&hide_border=false" alt="the-pratik" /></p>
-
-<p><img align="left" width="300" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=the-pratik&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="the-pratik" /></p>
