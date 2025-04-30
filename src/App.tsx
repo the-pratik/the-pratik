@@ -224,9 +224,9 @@ function App() {
           <div className="column large-full ss-copyright">
             <span>
               Crafted with
-              <a>💚</a>
+              <a> 💚 </a>
               <a style={{ color: "#FFFFFF4D" }}> by </a>
-              <a href="https://github.com/the-pratik" target="_blank">
+              <a href="https://github.com/the-pratik" className="pd-hover" target="_blank">
                 Pratik Deshpande
               </a>
             </span>

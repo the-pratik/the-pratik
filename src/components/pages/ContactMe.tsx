@@ -12,7 +12,7 @@ function ContactMe() {
       <div className="row contact-main">
         <div className="column large-full">
           <p className="contact-email">
-            <a href="mailto:#0">sanketdeshpande68@gmail.com</a>
+            <a href="mailto:#0">pratikdeshpande65@gmail.com</a>
           </p>
 
           <p className="section-desc">
