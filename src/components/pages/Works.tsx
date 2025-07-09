@@ -31,7 +31,7 @@ const works = [
   },
   {
     title: "React Arrow Stepper",
-    projectLink: "https://react-arrow-stepper.vercel.app",
+    projectLink: "https://form-stepper-react.vercel.app",
     githubLink: "https://github.com/the-pratik",
     altText: "ArrowStepper",
     imageUrl: "images/projects/ArrowStepper.png",
