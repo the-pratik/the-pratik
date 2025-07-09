@@ -54,12 +54,12 @@ function AboutMe() {
 
         <div className="row about-me__buttons">
           <div className="column large-half tab-full">
-            <a href="/" className="btn btn--stroke full-width">
+            <a href="#contact_me" className="btn btn--stroke full-width">
               Hire Me
             </a>
           </div>
           <div className="column large-half tab-full">
-            <a href="/" className="btn btn--primary full-width">
+            <a href="/docs/Pratik_Deshpande_Full_Stack_SDE.pdf" download className="btn btn--primary full-width">
               Download CV
             </a>
           </div>

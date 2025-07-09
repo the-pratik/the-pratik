@@ -3,7 +3,7 @@ import React from "react";
 function ContactMe() {
   return (
     <>
-      <div className="row heading-block">
+      <div id="contact_me" className="row heading-block">
         <div className="column large-full">
           <h2 className="section-heading">Get In Touch</h2>
         </div>

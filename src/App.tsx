@@ -201,11 +201,11 @@ function App() {
             <SkillSets />
             <a
               onClick={() => {
-                highlightAndScroll(4, contactRef);
+                highlightAndScroll(3, workRef);
               }}
               className="btn full-width"
             >
-              Let's Talk
+              Things I've Done
             </a>
           </div>
         </div>

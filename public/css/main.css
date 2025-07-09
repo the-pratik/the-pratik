@@ -1918,7 +1918,7 @@ input::-moz-focus-inner {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url(../images/hero-pic.svg);
+  background-image: url(../images/favicon.png);
   background-size: contain;
   position: absolute;
   z-index: 2;
