@@ -1709,6 +1709,10 @@ input::-moz-focus-inner {
   display: none;
   height: 42px;
   width: 42px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
   line-height: 42px;
   font-family: "Lora", serif;
   font-size: 1.4rem;

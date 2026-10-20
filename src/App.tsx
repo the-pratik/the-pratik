@@ -67,8 +67,10 @@ function App() {
           <ul className="header-main-nav">
             <li className={`${selectedTab === 0 && "current"}`}>
               <a
+                href="#intro"
                 className="smoothscroll"
-                onClick={() => {
+                onClick={(event) => {
+                  event.preventDefault();
                   highlightAndScroll(0, introRef);
                 }}
                 title="intro"
@@ -78,8 +80,10 @@ function App() {
             </li>
             <li className={`${selectedTab === 1 && "current"}`}>
               <a
+                href="#about"
                 className="smoothscroll"
-                onClick={() => {
+                onClick={(event) => {
+                  event.preventDefault();
                   highlightAndScroll(1, aboutRef);
                 }}
                 title="about"
@@ -89,8 +93,10 @@ function App() {
             </li>
             <li className={`${selectedTab === 2 && "current"}`}>
               <a
+                href="#services"
                 className="smoothscroll"
-                onClick={() => {
+                onClick={(event) => {
+                  event.preventDefault();
                   highlightAndScroll(2, serviceRef);
                 }}
                 title="services"
@@ -100,8 +106,10 @@ function App() {
             </li>
             <li className={`${selectedTab === 3 && "current"}`}>
               <a
+                href="#works"
                 className="smoothscroll"
-                onClick={() => {
+                onClick={(event) => {
+                  event.preventDefault();
                   highlightAndScroll(3, workRef);
                 }}
                 title="works"
@@ -111,8 +119,10 @@ function App() {
             </li>
             <li className={`${selectedTab === 4 && "current"}`}>
               <a
+                href="#contact"
                 className="smoothscroll"
-                onClick={() => {
+                onClick={(event) => {
+                  event.preventDefault();
                   highlightAndScroll(4, contactRef);
                 }}
                 title="contact us"
@@ -125,12 +135,15 @@ function App() {
           <SocialLinks />
         </nav>
 
-        <a
+        <button
+          type="button"
           className={`header-menu-toggle ${showMobileMenu && "is-clicked"}`}
           onClick={toggleMenu}
+          aria-expanded={showMobileMenu}
+          aria-label={showMobileMenu ? "Close navigation menu" : "Open navigation menu"}
         >
           <span>Menu</span>
-        </a>
+        </button>
       </header>
 
       <section id="intro" className="s-intro target-section" ref={introRef}>
@@ -152,7 +165,9 @@ function App() {
 
           <div className="intro-scroll" style={{ zIndex: 3 }}>
             <a
-              onClick={() => {
+              href="#about"
+              onClick={(event) => {
+                event.preventDefault();
                 highlightAndScroll(1, aboutRef);
               }}
               className="intro-scroll-link smoothscroll"
@@ -200,7 +215,9 @@ function App() {
           <div className="column large-full">
             <SkillSets />
             <a
-              onClick={() => {
+              href="#works"
+              onClick={(event) => {
+                event.preventDefault();
                 highlightAndScroll(3, workRef);
               }}
               className="btn full-width"
@@ -224,9 +241,9 @@ function App() {
           <div className="column large-full ss-copyright">
             <span>
               Crafted with
-              <a> 💚 </a>
-              <a style={{ color: "#FFFFFF4D" }}> by </a>
-              <a href="https://github.com/the-pratik" className="pd-hover" target="_blank">
+              <span aria-label="love" role="img"> 💚 </span>
+              <span style={{ color: "#FFFFFF4D" }}> by </span>
+              <a href="https://github.com/the-pratik" className="pd-hover" target="_blank" rel="noreferrer">
                 Pratik Deshpande
               </a>
             </span>
@@ -234,9 +251,11 @@ function App() {
 
           <div className="ss-go-top">
             <a
+              href="#intro"
               className="smoothscroll"
               title="Back to Top"
-              onClick={() => {
+              onClick={(event) => {
+                event.preventDefault();
                 highlightAndScroll(0, introRef);
               }}
             ></a>

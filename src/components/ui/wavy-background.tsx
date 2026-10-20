@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "../../utils/cn";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
 
 export const WavyBackground = ({
@@ -26,78 +26,68 @@ export const WavyBackground = ({
   waveOpacity?: number;
   [key: string]: any;
 }) => {
-  const noise = createNoise3D();
-  let w: number,
-    h: number,
-    nt: number,
-    i: number,
-    x: number,
-    ctx: any,
-    canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const getSpeed = () => {
-    switch (speed) {
-      case "slow":
-        return 0.001;
-      case "fast":
-        return 0.002;
-      default:
-        return 0.001;
-    }
-  };
-
-  const init = () => {
-    canvas = canvasRef.current;
-    ctx = canvas.getContext("2d");
-    w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
-    ctx.filter = `blur(${blur}px)`;
-    nt = 0;
-    window.onresize = function () {
-      w = ctx.canvas.width = window.innerWidth;
-      h = ctx.canvas.height = window.innerHeight;
-      ctx.filter = `blur(${blur}px)`;
-    };
-    render();
-  };
-
-  const waveColors = colors ?? [
-    "#38bdf8",
-    "#818cf8",
-    "#c084fc",
-    "#e879f9",
-    "#22d3ee",
-  ];
-  const drawWave = (n: number) => {
-    nt += getSpeed();
-    for (i = 0; i < n; i++) {
-      ctx.beginPath();
-      ctx.lineWidth = waveWidth || 50;
-      ctx.strokeStyle = waveColors[i % waveColors.length];
-      for (x = 0; x < w; x += 5) {
-        var y = noise(x / 800, 0.3 * i, nt) * 100;
-        ctx.lineTo(x, y + h * 0.5); // adjust for height, currently at 50% of the container
-      }
-      ctx.stroke();
-      ctx.closePath();
-    }
-  };
-
-  let animationId: number;
-  const render = () => {
-    ctx.fillStyle = backgroundFill || "#050505";
-    ctx.globalAlpha = waveOpacity || 0.5;
-    ctx.fillRect(0, 0, w, h);
-    drawWave(5);
-    animationId = requestAnimationFrame(render);
-  };
+  const noise = useMemo(() => createNoise3D(), []);
 
   useEffect(() => {
-    init();
+    const canvas = canvasRef.current;
+    const context = canvas?.getContext("2d");
+
+    if (!canvas || !context) {
+      return;
+    }
+
+    let width = 0;
+    let height = 0;
+    let time = 0;
+    let animationId = 0;
+    const waveColors = colors ?? [
+      "#38bdf8",
+      "#818cf8",
+      "#c084fc",
+      "#e879f9",
+      "#22d3ee",
+    ];
+    const speedIncrement = speed === "fast" ? 0.002 : 0.001;
+
+    const resizeCanvas = () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      context.filter = `blur(${blur}px)`;
+    };
+
+    const render = () => {
+      context.fillStyle = backgroundFill || "#050505";
+      context.globalAlpha = waveOpacity || 0.5;
+      context.fillRect(0, 0, width, height);
+      time += speedIncrement;
+
+      for (let wave = 0; wave < 5; wave++) {
+        context.beginPath();
+        context.lineWidth = waveWidth || 50;
+        context.strokeStyle = waveColors[wave % waveColors.length];
+
+        for (let x = 0; x < width; x += 5) {
+          const y = noise(x / 800, 0.3 * wave, time) * 100;
+          context.lineTo(x, y + height * 0.5);
+        }
+
+        context.stroke();
+        context.closePath();
+      }
+
+      animationId = requestAnimationFrame(render);
+    };
+
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+    render();
+
     return () => {
       cancelAnimationFrame(animationId);
+      window.removeEventListener("resize", resizeCanvas);
     };
-  }, []);
+  }, [backgroundFill, blur, colors, noise, speed, waveOpacity, waveWidth]);
 
   return (
     <div

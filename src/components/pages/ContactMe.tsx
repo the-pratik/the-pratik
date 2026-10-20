@@ -12,7 +12,9 @@ function ContactMe() {
       <div className="row contact-main">
         <div className="column large-full">
           <p className="contact-email">
-            <a href="mailto:#0">pratikdeshpande65@gmail.com</a>
+            <a href="mailto:pratikdeshpande65@gmail.com">
+              pratikdeshpande65@gmail.com
+            </a>
           </p>
 
           <p className="section-desc">
@@ -30,6 +32,7 @@ function ContactMe() {
               <a
                 href="https://www.linkedin.com/in/pratik-deshpande-16065b196/"
                 target="_blank"
+                rel="noreferrer"
                 title="LinkedIn"
               >
                 LinkedIn
@@ -39,6 +42,7 @@ function ContactMe() {
               <a
                 href="https://twitter.com/__thepratik__19/"
                 target="_blank"
+                rel="noreferrer"
                 title="Twitter"
               >
                 Twitter
@@ -48,6 +52,7 @@ function ContactMe() {
               <a
                 href="https://www.instagram.com/__thepratik__19/"
                 target="_blank"
+                rel="noreferrer"
                 title="Instagram"
               >
                 Instagram

@@ -142,6 +142,7 @@ function Works() {
                     <a
                       href={work?.projectLink}
                       target="_blank"
+                      rel="noreferrer"
                       className="thumb-link"
                       title={work?.altText}
                     >
@@ -152,6 +153,7 @@ function Works() {
                       className="item-folio__project-link"
                       title={`${work?.altText} Github`}
                       target="_blank"
+                      rel="noreferrer"
                     ></a>
                   </div>
 
