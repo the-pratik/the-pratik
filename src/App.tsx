@@ -183,7 +183,7 @@ function App() {
         <div className="row heading-block heading-block--center">
           <div className="column large-full">
             <h2 className="section-desc">
-              <span>Need a developer with latest skillset? </span>
+              <span>Let’s build what’s next—with skills that keep evolving. </span>
               <SparklesCore
                 background="transparent"
                 minSize={0.4}

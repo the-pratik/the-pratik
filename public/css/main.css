@@ -1570,7 +1570,7 @@ input::-moz-focus-inner {
   z-index: 100;
   /* From https://css.glass */
   background: rgba(5, 5, 5, 0.62);
-  /* border-radius: 16px; */
+  border-radius: 0 0 16px 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -3456,6 +3456,7 @@ footer a:visited {
   display: block;
   background: rgba(255, 255, 255, 0.05);
   text-decoration: none;
+  border-radius: 50%;
   margin: 0;
   padding: 0;
   border: 0 none;

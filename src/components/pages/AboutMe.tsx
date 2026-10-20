@@ -14,40 +14,32 @@ function AboutMe() {
         <div className="row about-me__content">
           <div className="column large-full about-me__text">
             <p className="lead">
-              I am a seasoned Senior Software Developer with a passion for
-              creating robust and scalable solutions. With extensive experience
-              in Java full-stack development and expertise in React, I thrive in
-              crafting innovative and efficient software solutions.
+              I am a software engineer who enjoys building robust, scalable
+              products. My experience spans full-stack development and
+              AI-enabled healthcare solutions, with a focus on making complex
+              technology useful in everyday workflows.
             </p>
 
             <p>
-              In the realm of backend development, I am proficient in utilizing
-              Java to build high-performance and maintainable server-side
-              applications. My experience spans across designing RESTful APIs,
-              implementing data models, and optimizing database queries for
-              optimal performance.
+              I build maintainable backend services and RESTful APIs, design
+              data models, and optimize database queries. I have used Java and
+              related technologies to deliver reliable server-side
+              applications.
             </p>
 
             <p>
-              On the frontend, I specialize in leveraging React to create
-              engaging and responsive user interfaces. I have a keen eye for
-              user experience, implementing state-of-the-art frontend
-              architectures, and ensuring seamless integration with backend
-              services. I actively seek opportunities for professional
-              development, keeping my skills up-to-date with the latest
-              advancements in Java, React, and other relevant technologies.
+              On the frontend, I use React to create responsive, intuitive
+              interfaces and integrate them seamlessly with backend services.
+              I continuously develop my skills and keep up with advances in
+              software engineering.
             </p>
 
             <p>
-              Being a full-stack developer, I bring a holistic approach to
-              software development. I am adept at seamlessly connecting frontend
-              and backend components, ensuring a cohesive and efficient
-              end-to-end application architecture. I am excited about the
-              prospect of contributing my expertise to challenging projects and
-              collaborating with talented professionals. If you're looking for a
-              dedicated Senior Software Developer with a strong background in
-              Java full stack and React, I would love to connect and explore
-              potential opportunities.
+              As a full-stack developer, I bring a holistic perspective to
+              software development, connecting frontend and backend components
+              into cohesive end-to-end solutions. I enjoy tackling challenging
+              problems and collaborating with talented teams to build useful,
+              dependable products.
             </p>
           </div>
         </div>
@@ -83,16 +75,38 @@ function AboutMe() {
                 <div className="timeline__block">
                   <div className="timeline__bullet"></div>
                   <div className="timeline__header">
-                    <p className="timeline__timeframe">Aug 2022 - Present</p>
+                    <p className="timeline__timeframe">Oct 2025 - Present</p>
+                    <h3 className="item-title">Wolters Kluwer</h3>
+                    <h5>Product Software Engineer II</h5>
+                  </div>
+                  <div className="timeline__desc">
+                    <p>
+                      Build AI-enabled medical products that help clinicians
+                      with their day-to-day work. Contribute to UpToDate Expert
+                      AI by developing semantic indexing for hospital and
+                      university content to support relevant retrieval.
+                    </p>
+                    <p>
+                      Develop modules for complex content pipelines, supporting
+                      the content processing and retrieval use cases behind
+                      these products.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="timeline__block">
+                  <div className="timeline__bullet"></div>
+                  <div className="timeline__header">
+                    <p className="timeline__timeframe">Aug 2022 - Oct 2025</p>
                     <h3 className="item-title">Capgemini</h3>
                     <h5>Senior Software Engineer</h5>
                   </div>
                   <div className="timeline__desc">
                     <p>
-                      Joined as Full Stack Developer with the knowledge of Java,
-                      Spring Boot, React, Data JPA, Hibernate, HTML, CSS, JS,
-                      Bootstrap, Postgres, kubernetes and tools like Postman,
-                      Jenkins, Vercel, Heroku, etc.
+                      Worked across the full stack with Java, Spring Boot,
+                      React, Spring Data JPA, Hibernate, HTML, CSS, JavaScript,
+                      Bootstrap, and PostgreSQL. Used tools including Postman
+                      and Jenkins to build and deliver software.
                     </p>
                   </div>
                 </div>
@@ -106,10 +120,9 @@ function AboutMe() {
                   </div>
                   <div className="timeline__desc">
                     <p>
-                      Got a chance to get my hands on recent technologies such
-                      as Spring Boot and React. Applied the knowledge in
-                      creating a end-to-end project of ecommerce called Ayur
-                      Basket which is basically a store to buy and sell aurvedic
+                      Gained hands-on experience with Spring Boot and React,
+                      applying these technologies to build Ayur Basket, an
+                      end-to-end e-commerce application for Ayurvedic
                       medicines.
                     </p>
                   </div>
@@ -124,10 +137,10 @@ function AboutMe() {
                   </div>
                   <div className="timeline__desc">
                     <p>
-                      Joined as a PHP developer and learned basics of laravel to
-                      develop API for the interaction between users and
-                      databases. Created a functionality to generate visual map
-                      from the data files.
+                      Started as a PHP developer, learning Laravel while
+                      building APIs that connected users with data. Also
+                      developed a feature to generate visual maps from data
+                      files.
                     </p>
                   </div>
                 </div>

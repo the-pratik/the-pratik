@@ -22,12 +22,7 @@ function ContactMe() {
         </div>
       </div>
 
-      <div className="row contact-infos">
-        <div className="column large-5 medium-full contact-phone">
-          <h4>Call Me</h4>
-          <a href="tel:9146365317">+91 9146365317</a>
-        </div>
-
+      <div className="row contact-infos">``
         <div className="column large-7 medium-full contact-social">
           <h4>Social</h4>
           <ul>
